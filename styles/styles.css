@@ -120,27 +120,40 @@
 
 :root {
   /* Primary Colors */
-  --primary-dark: #2c3e50; /* Dark blue for headers and important elements */
-  --primary-main: #3498db; /* Trustworthy blue for primary actions */
-  --primary-light: #ecf0f1; /* Light gray for backgrounds */
+  --primary-dark: #334155; /* Dark blue for headers and important elements */
 
   /* Secondary Colors */
-  --secondary-dark: #27ae60; /* Dark green for positive actions */
-  --secondary-main: #2ecc71; /* Green for success states */
-
-  /* Accent Colors */
-  --accent-warning: #f39c12; /* Orange for warnings */
-  --accent-danger: #e74c3c; /* Red for errors/danger */
+  --secondary-dark: #65a30d; /* Dark green for positive actions and buttons */
+  --secondary-main: #d9f99d; /* Green for success states and borders */
 
   /* Neutral Colors */
-  --neutral-dark: #34495e; /* Dark gray for text */
-  --neutral-medium: #95a5a6; /* Medium gray for secondary text */
-  --neutral-light: #bdc3c7; /* Light gray for borders */
+  --neutral-dark: #334155; /* Dark gray for text */
+  --neutral-medium: #64748b; /* Medium gray for secondary text */
+  --neutral-light: #94a3b8; /* Light gray for third types of texts */
+  --neutral-border: #e2e8f0; /* Light gray for borders */
 
   /* Backgrounds */
-  --bg-primary: #ffffff; /* White main background */
-  --bg-secondary: #f8f9fa; /* Off-white for card backgrounds */
+  --bg-primary: #f1f5f9; /* White main background */
+  --bg-secondary: #e2e8f0; /* Off-white for card backgrounds */
+}
 
-  /* Special Elements */
-  --card-shadow: rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: var(--neutral-light);
+  font-family: "Satoshi", sans-serif;
+}
+
+.container {
+  width: 900px;
+  height: 600px;
+  background: #ffffff;
+  border-radius: 10px;
 }
