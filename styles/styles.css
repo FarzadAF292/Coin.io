@@ -261,7 +261,77 @@ body {
   display: grid;
   grid-template-columns: auto 1fr auto;
 }
-/* Left sidebar */
+
+/* --------- Main part ----------- */
+.mainPart {
+  padding: 0 20px;
+}
+
+.edit {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.edit span {
+  font-size: 8px;
+  font-weight: 700;
+  color: var(--neutral-medium);
+}
+
+.edit a {
+  font-style: italic;
+  font-size: 8px;
+  color: #4d7c0f;
+  font-weight: 500;
+}
+
+.creditCards {
+  display: flex;
+  align-items: center;
+  gap: 13.32px;
+  margin-top: 10.21px;
+}
+
+.cards img {
+  transition: all 0.3s ease;
+  position: relative;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.cards img:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.addCard {
+  width: 30px;
+  height: 30px;
+  background: var(--bg-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.addCard:hover {
+  transform: rotate(90deg);
+}
+
+.addCard img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.addCard:hover img {
+  transform: rotate(135deg);
+  filter: drop-shadow(0 0 2px rgba(76, 175, 80, 0.5));
+}
+
+/* ------------- Left sidebar ----------------- */
 .leftSidebarList {
   list-style: none;
 }
